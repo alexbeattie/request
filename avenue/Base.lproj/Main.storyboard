@@ -17,19 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFD-uk-fw2">
-                                <rect key="frame" x="16" y="20" width="343" height="202"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waj-mY-se5">
+                                <rect key="frame" x="16" y="58" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hpB-gd-LH0">
+                                <rect key="frame" x="16" y="106" width="343" height="188"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hpB-gd-LH0" secondAttribute="trailing" constant="16" id="BNo-oD-dlY"/>
+                            <constraint firstItem="waj-mY-se5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="D28-d9-Iom"/>
+                            <constraint firstItem="hpB-gd-LH0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ecp-38-99M"/>
+                            <constraint firstItem="waj-mY-se5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cOB-DW-vBS"/>
+                            <constraint firstItem="hpB-gd-LH0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cpx-ul-dK5"/>
+                            <constraint firstItem="waj-mY-se5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jJ6-OE-LJa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hpB-gd-LH0" secondAttribute="bottom" constant="373" id="zPy-O7-tuU"/>
+                            <constraint firstItem="hpB-gd-LH0" firstAttribute="top" secondItem="waj-mY-se5" secondAttribute="bottom" constant="27.5" id="zsx-LA-ueW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="labelTest" destination="LFD-uk-fw2" id="pbj-JG-8bc"/>
+                        <outlet property="addressLbl" destination="waj-mY-se5" id="Pnq-IU-m4H"/>
+                        <outlet property="imageOne" destination="hpB-gd-LH0" id="WKE-QA-e9m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
